@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset="UTF-8">
+
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font: italic bold 16px/2;
+        }
+        .container {
+            height: 600px;
+            width: 600px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .bigCell {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .dot {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            /* background: radial-gradient(#acacac, #757575); */
+            background-color: rgb(168, 168, 168);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .line {
+            width: 10px;
+            height: 10px;
+            z-index: 1000;
+            position:absolute;
+
+            /* background: radial-gradient(#acacac, #757575); */
+            border-radius: 10px 10px 10px 10px;
+            background-color: rgb(238, 238, 238);
+            
+        }
+
+        .slectedDot {
+
+            background-color: rgb(238, 238, 238);
+            outline:  10px solid rgb(141, 141, 141);
+            border-radius: 20px;
+        }
+
+        .test {
+            border: 1px solid black;
+            border-radius: 0 15px 30px 45px;
+            position: absolute;
+            z-index: 2000;
+            
+            
+        }
+
+        .connectedLine {
+            width: 10px;
+            height: 10px;
+            z-index: 1000;
+            position:absolute;
+
+            /* background: radial-gradient(#acacac, #757575); */
+            border-radius: 10px 10px 10px 10px;
+            background-color: rgb(238, 238, 238);
+
+        
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .temporaryTip {
+            position: absolute;
+            background-color: rgb(71, 71, 71);
+            border-radius: 5%;
+            z-index: 1000;
+            font-size: 40px;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(236, 236, 236);
+
+        }
+
+
+
+        .pinButton {
+            position: absolute;
+            border-radius: 50%;
+            top: 20px;
+            right: 20px;
+            height: 60px;
+            width: 60px;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://w7.pngwing.com/pngs/154/370/png-transparent-computer-icons-desktop-restart-miscellaneous-trademark-service.png);
+            background-size: contain;
+
+        }
+
+        .background {
+            background-image: url(https://antmakend.com/wp-content/uploads/2019/02/marble.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="background" id="background">
+    <div class="temporaryTip" id="temporaryTip"></div>
+    <div class="container" id="container">
+        <div class="bigCell" id="bigCell">
+            <div class="dot" id="dot1"></div>
+        </div>
+        <div class="bigCell" id="bigCell">
+            <div class="dot" id="dot2"></div>
+        </div>
+        <div class="bigCell" id="bigCell">
+            <div class="dot" id="dot3"></div>
+        </div>
+        <div class="bigCell" id="bigCell">
+            <div class="dot" id="dot4"></div>
+        </div>
+        <div class="bigCell" id="bigCell">
+            <div class="dot" id="dot5"></div>
+        </div>
+        <div class="bigCell" id="bigCell">
+            <div class="dot" id="dot6"></div>
+        </div>
+        <div class="bigCell" id="bigCell">
+            <div class="dot" id="dot7"></div>
+        </div>
+        <div class="bigCell" id="bigCell">
+            <div class="dot" id="dot8"></div>
+        </div>
+        <div class="bigCell" id="bigCell">
+            <div class="dot" id="dot9"></div>
+        </div>
+        <button class="pinButton" id="pinResetButton"></button>
+    </div>
+</div>
+<script src="./index.js"></script>
+</body>
+
+
+</html>
